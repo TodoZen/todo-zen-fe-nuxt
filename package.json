@@ -1,0 +1,33 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "start": "yarn start:local",
+    "start:local": "nuxi dev --dotenv .env.local",
+    "start:dev": "nuxi dev --dotenv .env.dev",
+    "start:prod": "nuxi dev --dotenv .env.prod",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "generate-swagger": "swagger-typescript-api --path http://localhost:8080/api-docs --output ./__generated__ --axios --modular"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "chalk": "^5.3.0",
+    "nuxt": "^3.8.1",
+    "nuxt-quasar-ui": "^2.0.6",
+    "swagger-typescript-api": "^13.0.3",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
+    "@quasar/extras": "^1.16.7",
+    "axios": "^1.6.1",
+    "dayjs": "^1.11.10",
+    "pinia": "^2.1.7",
+    "quasar": "^2.13.0"
+  }
+}

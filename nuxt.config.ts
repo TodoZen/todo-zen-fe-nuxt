@@ -6,6 +6,9 @@ console.log(chalk.blue(`✨✨✨ ${PROFILE} is running. ✨✨✨`));
 
 export default defineNuxtConfig({
   ssr: false,
+  devServer: {
+    port: 3005,
+  },
   devtools: { enabled: true },
   vue: {
     runtimeCompiler: true, //추가
@@ -37,7 +40,7 @@ export default defineNuxtConfig({
       // 개발 API
       "/api": {
         target: "http://localhost:8080/api",
-        changeOrigin: true,
+        // changeOrigin: true,
       },
     },
   },

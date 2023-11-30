@@ -8,3 +8,7 @@ input,
 select {
   background-clip: text !important;
 }
+
+body {
+  background-color: #e5e5e5;
+}
